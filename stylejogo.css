@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 900px;
+}
+
+button{
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
