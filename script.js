@@ -1,4 +1,3 @@
 function comecar(){
-    window.location.href = "jogo.html";
-    
+    window.location.href = "jogo.html";   
 }
