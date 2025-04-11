@@ -1,26 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="./stylejogo.css">
+    <link rel="stylesheet" href="stylejogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mate O Dragão</title>
+    <title>Ficha do Herói</title>
+
 </head>
 
 <body>
-    <div>
-        <h2>Crie seu Herói
-        </h2>
+
+    <div class="conteudo">
+
+        <!-- ESQUERDA -->
+        <section class="heroi">
+            <div class="caixa">
+                <div id="cavalo" style="width: 300px; 
+                word-break: break-word; 
+                overflow-wrap: break-word;"></div>
+            </div>
+            <button type="button" class="botao" id="sicario" onclick="showSicario()">O Sicário</button>
+            <button type="button" class="botao" id="soldado" onclick="showSoldado()">O Soldado</button>
+            <button type="button" class="botao" id="sagrado" onclick="showSagrado()">O Sagrado</button>
+        </section>
+
+        <!-- CENTRO -->
+        <div class="mundo">
+            <img src="/pixil-frame-0 (1).png" alt="Imagem do mundo" class="mundoImg">
+        </div>
+
+        <!-- DIREITA -->
+        <section class="ficha">
+            <h2>Ficha</h2>
+            <div class="caixa">
+                <div id="descricao"></div>
+            </div>
+
+            <h3>Habilidades</h3>
+            <div class="habilidades">
+                <div class="habilidade">
+                    <div class="quadrado"></div>
+                    Força
+                </div>
+                <div class="habilidade">
+                    <div class="quadrado"></div>
+                    Agilidade
+                </div>
+                <div class="habilidade">
+                    <div class="quadrado"></div>
+                    Saúde
+                </div>
+                <div class="habilidade">
+                    <div class="quadrado"></div>
+                    Crença
+                </div>
+            </div>
+        </section>
+
     </div>
-    <div>
-        <button onclick="" class="criminoso">O Criminoso</button>
-        <button onclick="" class="soldado">O Soldado</button>
-        <button onclick="" class="bispo">O Bispo</button>
-    </div>
-    <div>
-        <img src="https://i.redd.it/aw3k8syq6o4d1.jpeg" alt="">
-    </div>
+
 </body>
-<script src="./jogo.js"></script>
+
 </html>
+<script src="./scriptjogo.js"></script>
