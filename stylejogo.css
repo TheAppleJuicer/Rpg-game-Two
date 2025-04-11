@@ -1,19 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
-
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
+    background-color: black;
+    color: white;
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 900px;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: large;
+}
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+}
+#descricao{
+    color: white;
+    font-size: x-large;
+}
+#cavalo{
+    color: white;
+    font-size: x-large;
+    
+}
+.heroi,
+.ficha {
+   
+    flex: 1;
+    max-width: 350px;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    
 }
 
-button{
+.personagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.personagem img {
+    max-width: 100%;
+    width: 550px;
+    height: 550px;
+    height: auto;
+}
+
+.mundoImg{
+    height: 550px;
+}
+
+.caixa {
+    border: 1px solid white;
+    padding: 15px;
+    margin-bottom: 20px;
+    flex: 1;
+    max-width: 350px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.botao {
+    background: black;
+    color: red;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 26vw;
+    font-size: x-large;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#sicario{
+    color: orange;
+}
+#sagrado{
+    color: yellow;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.habilidade {
+    text-align: center;
+}
+
+.quadrado {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+h2,
+h3 {
+    text-align: center;
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-style: normal;
