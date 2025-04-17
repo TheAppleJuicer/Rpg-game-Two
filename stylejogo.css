@@ -10,6 +10,7 @@ body {
 p{
     font-size: large;
 }
+
 .conteudo {
     display: flex;
     justify-content: space-between;
@@ -19,16 +20,17 @@ p{
 }
 #descricao{
     color: white;
-    font-size: x-large;
+    font-size: larger;
 }
 #cavalo{
     color: white;
     font-size: x-large;
     
 }
-.heroi,
+
 .ficha {
-   
+    position: relative;
+    top: -50px;
     flex: 1;
     max-width: 350px;
     font-family: "Jacquard 24", system-ui;
@@ -36,6 +38,14 @@ p{
     font-style: normal;
     padding: 10px;
     
+}
+.heroi{
+    flex: 1;
+    max-width: 350px;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
 }
 
 .personagem {
@@ -108,21 +118,82 @@ p{
 }
 
 .habilidade {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px; /* Espaço entre quadrado e texto */
 }
 
+.habilidade .quadrado {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff; /* ou outra cor desejada */
+    border: 10px solid #020202;
+}
+
+.habilidade p {
+    color: white;
+    margin: 0;
+    font-size: x-larger; 
+    font-family: 'Jacquard 24', cursive; 
+}
+#descricaoHabilidades{
+    color: white;
+    font-size: x-large;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid white;
+    padding: 10px;
+}
 .quadrado {
     width: 40px;
     height: 40px;
     background-color: white;
     margin-bottom: 5px;
     box-shadow: 2px 2px 5px #000;
+    border: 5px solid white;
 }
 
 h2,
 h3 {
+    font-size: xx-large;
     text-align: center;
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+h3{
+    font-size: xx-large;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    color: aliceblue;
+    font-weight: 400;
+    font-style: normal;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pularTexto{
+    color: white;
+    background-color: #000;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    font-size: 50px;
+    display: flex;
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
 }
