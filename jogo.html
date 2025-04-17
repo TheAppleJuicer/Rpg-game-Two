@@ -21,47 +21,69 @@
                 <div id="cavalo" style="width: 300px; 
                 word-break: break-word; 
                 overflow-wrap: break-word;"></div>
+               
             </div>
-            <button type="button" class="botao" id="sicario" onclick="showSicario()">O Sicário</button>
-            <button type="button" class="botao" id="soldado" onclick="showSoldado()">O Soldado</button>
-            <button type="button" class="botao" id="sagrado" onclick="showSagrado()">O Sagrado</button>
+            <button type="button" class="botao" id="sicario" onclick="showSicario('/img/sicario.png')">O
+                Sicário</button>
+            <button type="button" class="botao" id="soldado" onclick="showSoldado('/img/soldado.png')">O
+                Soldado</button>
+            <button type="button" class="botao" id="sagrado" onclick="showSagrado('/img/sagrado.png')">O
+                Sagrado</button>
+
         </section>
 
         <!-- CENTRO -->
         <div class="mundo">
-            <img src="/pixil-frame-0 (1).png" alt="Imagem do mundo" class="mundoImg">
+            <img src="/pixil-frame-0 (1).png" alt="Imagem do mundo" class="mundoImg" id="imagemCentral">
         </div>
+        
+       
 
         <!-- DIREITA -->
         <section class="ficha">
             <h2>Ficha</h2>
             <div class="caixa">
                 <div id="descricao"></div>
+
             </div>
 
             <h3>Habilidades</h3>
             <div class="habilidades">
-                <div class="habilidade">
+                <div class="habilidade" onmouseover="mostrarDescricaoHabilidade('Sua força bruta e poder corporal. Mostre a eles do que você é feito.')"
+                    onmouseout="limparDescricaoHabilidade()">
                     <div class="quadrado"></div>
                     Força
                 </div>
-                <div class="habilidade">
+                <div class="habilidade" onmouseover="mostrarDescricaoHabilidade('Sua destreza, velocidade e habilidade manual. Eles nem vão ver de onde você veio.')"
+                    onmouseout="limparDescricaoHabilidade()">
                     <div class="quadrado"></div>
                     Agilidade
                 </div>
-                <div class="habilidade">
+                <div class="habilidade" onmouseover="mostrarDescricaoHabilidade('Sua saúde e construção corporal. Fique vivo a qualquer custo.')"
+                    onmouseout="limparDescricaoHabilidade()">
                     <div class="quadrado"></div>
                     Saúde
                 </div>
-                <div class="habilidade">
+                <div class="habilidade" onmouseover="mostrarDescricaoHabilidade('Sua presença e língua de prata. Controle e manipule.')"
+                    onmouseout="limparDescricaoHabilidade()">
                     <div class="quadrado"></div>
-                    Crença
+                    Mente
                 </div>
             </div>
+            
+           
+            <div id="descricaoHabilidades" class="descricao-habilidade"></div>
+            
+            
         </section>
 
     </div>
-
+    <!--CHÃO-->
+    <section class="footer">
+        <footer>
+            <button id="pularTexto" class="pularTexto">Pular Texto</button>
+        </footer>
+    </section>
 </body>
 
 </html>
